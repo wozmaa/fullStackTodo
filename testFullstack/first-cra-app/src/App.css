@@ -1,0 +1,128 @@
+body {
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tittle {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  width: 300px;
+}
+
+.textTodo {
+
+}
+.textList {
+  color: black;
+  background-color: orange;
+  border-radius: 4px;
+}
+
+.form {
+}
+.form input {
+  width: 500px;
+  font-size: 30px;
+  border-radius: 30px;
+  padding: 0 8px;
+}
+.form button {
+  background-color: rgb(72, 57, 57);
+  color: aliceblue;
+  font-size: 30px;
+  border: none;
+  border-radius: 25px;
+  width: 60px;
+}
+
+.todoList {
+  font-size: 35px;
+  color: white;
+}
+
+.todoshk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.todoshk button{
+  background-color: orange;
+  border-radius: 10px;
+  width: 35px;
+  height: 26px;
+  border: none;
+}
+.todoshk strike {
+  color: gray;
+}
+
+.load {
+  height: 80px;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+  margin-left: 140px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: orange;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: orange;
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
